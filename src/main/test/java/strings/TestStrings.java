@@ -16,6 +16,11 @@ public class TestStrings {
         testReverseWordsInString();
         testReverseWordCharactersInString();
         testLevenshteinDistance();
+        testPalindrome();
+    }
+
+    private void testPalindrome() {
+        assertTrue(StringUtils.isPalindrome("repaper"));
     }
 
     private void testReverseWordsInString() {

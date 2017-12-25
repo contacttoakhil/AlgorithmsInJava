@@ -86,7 +86,7 @@ public class StringUtils {
      * @param string string to verify
      * @return true if palindrome else false.
      */
-    private static boolean isPalindrome(String string) {
+    public static boolean isPalindrome(String string) {
         int n = string.length();
         for (int i = 0; i < (n/2); ++i) {
             if (string.charAt(i) != string.charAt(n - i - 1)) {
@@ -101,7 +101,7 @@ public class StringUtils {
      * @param string string to verify
      * @return true if palindrome else false.
      */
-    private static boolean isPalindromeUsingBuilder(String string) {
+    public static boolean isPalindromeUsingBuilder(String string) {
         return string.equals(new StringBuilder(string).reverse().toString());
     }
 
